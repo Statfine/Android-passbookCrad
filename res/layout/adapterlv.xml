@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        >
+         <ImageView 
+            android:id="@+id/rl_iv_xiaoguo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/preferential_ying"
+            android:layout_alignParentBottom="true"
+            />
+        
+        <RelativeLayout 
+            android:id="@+id/adapter_ll"
+            android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginRight="5dp"
+	        android:background="@drawable/preferential_b1"
+	        android:layout_marginBottom="1dp"
+            >
+	        <TextView 
+	            android:id="@+id/adapter_tv"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:text="尚食味"
+	            android:textSize="20dp"
+	            android:layout_marginTop="3dp"
+	            android:layout_marginLeft="10dp"
+	            android:textColor="@android:color/white"
+	            />
+	        <TextView 
+	            android:id="@+id/adapter_tv1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:text="有限期：2013.03.06"
+	            android:textSize="12dp"
+	            android:layout_alignParentBottom="true"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginBottom="2dp"
+	            android:textColor="@android:color/white"
+	            />
+        </RelativeLayout>
+       
+        <LinearLayout 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentBottom="true"
+	            android:background="@drawable/preferential_half"
+	            android:layout_marginBottom="1dp"
+	            />
+    </RelativeLayout>
+
+</LinearLayout>

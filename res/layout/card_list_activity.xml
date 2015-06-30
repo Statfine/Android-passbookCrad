@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white" >
+    
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="44dp" 
+        android:background="@android:color/black">
+        
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="我的优惠卷"
+            />
+
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+        >
+    <FrameLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_above="@+id/button_bottom"
+        >
+        <RelativeLayout 
+	         	android:id="@+id/ll_two"
+	         	android:layout_width="match_parent"
+		        android:layout_height="fill_parent"
+		        android:visibility="gone"
+		        android:orientation="horizontal"
+		        android:background="@android:color/white"
+		        android:gravity="bottom"
+	         >
+		     <ScrollView 
+		         android:layout_width="fill_parent"
+			     android:layout_height="match_parent"
+		         >
+		         <com.example.memenbercradid.Card
+		             android:id="@+id/mycard"
+		             android:layout_width="match_parent"
+		        	 android:layout_height="match_parent"
+		        	 android:layout_marginTop="20dp"
+		             />
+	         </ScrollView>
+	         
+	         <ImageView 
+	             android:id="@+id/back_iv"
+	             android:layout_width="match_parent"
+	             android:layout_height="20dp"
+	             android:layout_alignParentBottom="true"
+	             android:background="@drawable/preferential_bottom"
+	             />
+	     </RelativeLayout>
+        
+        <LinearLayout 
+            android:id="@+id/ll_one"	
+            android:layout_width="match_parent"
+		    android:layout_height="fill_parent"
+		    android:orientation="vertical"
+		    android:visibility="visible"
+            >
+		     <ListView 
+		        android:id="@+id/lv_show"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@android:color/white"
+		        android:listSelector="@android:color/transparent"
+				android:divider="@null"
+		        />
+	     </LinearLayout>
+	     
+    </FrameLayout>
+    
+    <Button 
+        android:id="@+id/button_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@drawable/preferential_top"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        />
+    </RelativeLayout>
+</LinearLayout>
